@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <Style>
+        .myform{
+           padding: 10ex;
+        }
+        .heading{
+            color: red;
+        }
+        .box{
+            text-align: center;
+          
+        }
+        .x{
+            font-size: 0.01em;
+        }
+        .star{
+            color: red;
+        }
+        .pera{
+            text-align: center;
+        }
+        .pera2{
+            text-align: center;
+            height: 90;
+            width: 400;
+        }
+        .placement{
+            padding-left: 200;
+        }
+        .placement{
+            scroll-padding: 100;
+        }
+        form {
+        margin: 0 auto;
+        width: 500px;
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+        }
+        ul {
+       list-style: none;
+       padding: 0;
+       margin: 0;
+       }
+
+       .center{
+       justify-content: center;
+       display:flex;
+      
+       }
+
+
+       
+
+     
+    </Style>
+</head>
+<body>
+
+   
+    <form class="myform" action="/html/tags/html_form_tag_action.cfm" method="post">
+
+
+    <fieldset class="placement1">
+
+
+    <h3 class="heading">Donor Information</h3>
+          <ul>
+    <li>
+   
+            <p class="pera">
+            <label>First name <label class="star">*</label>
+                <input class="box" type="text" name="first_name" required>
+            </label>
+            </p>
+           
+
+            <p class="pera">
+            <label>Last name <label class="star">*</label>
+                <input class="box" type="text" name="last_name" required>
+            </label>
+            </p>
+            
+
+            <p class="pera">
+            <label>First name <label class="star">*</label>
+                <input class="box" type="text" name="first_name" required>
+            </label>
+            </p>
+            
+
+            <p class="pera">
+            <label>Company <label class="star">*</label>
+                <input class="box" type="text" name="company_name" required>
+            </label>
+            </p>
+
+
+            <p class="pera">
+            <label>Address1 <label class="star">*</label>
+                <input class="box" type="text" name="address" required>
+            </label>
+            </p>
+
+            
+            <p class="pera">
+            <label>State <label class="star">*</label>
+            <select id="state" name="state_name">
+            <option value="" selected="selected">Select a State</option>
+            <option value="city1" >Dhaka</option>
+            <option value="city2" >Sylhet</option>
+            <option value="city3" >Khulna</option>
+            </select>
+            </label> 
+            </p>
+            
+            <p class="pera">
+            <label>Zip Code <label class="star">*</label>
+            <input type="text" name="zipe_code_name" required>
+            </label> 
+            </p>
+            
+            <p class="pera">
+            <label>Country <label class="star">*</label>
+            <select id="country" name="country_name">
+            <option value="" selected="selected">Select a Country</option>
+            <option value="country1" >Bangladesh</option>
+            <option value="country2" >India</option>
+            <option value="country3" >Nepal</option>
+            </select>
+            </label> 
+            </p>
+            
+            
+            <p class="pera">
+            <label>Phone 
+            <input type="tel" name="phone_number">
+            </label>
+            </p>
+            
+            <p class="pera">
+            <label>Fax 
+            <input type="fax" name="fax_number">
+            </label>
+            </p>
+            
+            <p class="pera">
+            <label>Email <label class="star">*</label> 
+            <input type="email" name="email_address">
+            </label>
+            </p>
+            </li>
+            </ul>
+
+
+            <p class="pera">
+            <label >Donation Ammount</label><label class="star">*</label>
+            <input type="radio"  name="price" >None
+            <input type="radio"  name="price" >$50
+            <input type="radio"  name="price" >$75
+            <input type="radio"  name="price" >$100
+            <input type="radio"  name="price" >$250
+            <input type="radio"  name="price" >Others
+            </p>
+
+
+            <P class="pera">
+            <label>Recurring Donation</label>
+            <input type="checkbox" name="donation" value="donation">I am interested in giving on a regular basis 
+            </P>
+
+            <p class="pera">  
+            <label>Monthly Credit Card $ </label>
+            <input class="payment" type="number" name=""> For 
+            <input class="payment" type="number" name=""> Months
+            </p>
+
+            <h3 class="heading">Honoraium and Memorial Donation Information</h3>
+
+            <p class="pera"><label>I would like to make this</label><input type="radio"  name="commit" > To Honor</p>
+            <p class="pera"><label>donation</label><input   type="radio"  name="commit1" > In Memory of</p>
+
+               <p class="pera">
+                <label>Name 
+                <input type="text" name="person_name">
+                </label>
+                </p>
+                
+                <p class="pera">
+                <label>Acknowledge Donation to 
+                <input type="text" name="person_name">
+                </label>
+                </p>
+                
+                <p class="pera">
+                <label>Address
+                <input type="text" name="address">
+                </label>
+                </p>
+
+
+                 <p class="pera">
+                 <label>State
+                 <select id="state" name="state_name">
+                 <option value="" selected="selected">Select a State</option>
+                 <option value="city1" >Dhaka</option>
+                 <option value="city2" >Sylhet</option>
+                 <option value="city3" >Khulna</option>
+                 </select>
+                 </label> 
+                 </p>
+    
+                 <p class="pera">
+                 <label>Zip 
+                 <input type="text" name="zipe_code_name" required>
+                 </label> 
+                 </p>
+
+
+                 <h3 class="heading">Additional Information</h3> 
+                <p class="x">please enter your name,company or organization as you would like to appear in our publications:</p>
+
+                <p class="pera">
+                <label>Name
+                <input type="text" name="customer_name" required>
+                </label> 
+                </p>
+
+                <p ><input  type="checkbox" name="donation" >I would like to gift to remain anonymous </p>
+                <p ><input  type="checkbox" name="donation" >My employe offers me a matching gift program </p>
+                <p > <input  type="checkbox" name="donation" >Please save the cost of acknowledging this gift by not mailling a thank you letter<p></p>
+
+                
+                <p class="pera">
+                <label>Comments <sup class="x"><br>(please type any questions and feedback)</sup><br>
+                    <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;"></textarea>
+                </label> 
+                </p>
+                
+
+                <p class="pera">
+                <legend>How may we contact you?</legend>
+                <ul>
+                <input  class="placement" type="checkbox" name="extras" value="baby"> E-mails <br>
+                <input class="placement" type="checkbox" name="extras" value="wheelchair"> Postal Mail <br>
+                <input class="placement" type="checkbox" name="extras" value="tip"> Telephone <br>
+                <input class="placement" type="checkbox" name="extras" value="tip"> Fax <br>
+                </ul>
+                </p>
+                <p class="">I would like recieve newsletters and informaliton about special events by:</p>
+
+                <p class="pera">
+                <ul>
+                <input  class="placement" type="checkbox" name="extras" value="baby1"> E-mails <br>
+                <input class="placement" type="checkbox" name="extras" value="wheelchair1"> Postal Mail <br>
+                </ul>
+                </p>
+
+                <p ><input type="checkbox" name="extras" value="volt">I would like information about volunteering with the  </p>
+
+
+
+                    <div class="center"></div>
+                    <button type="submit">Reset</button>
+                    <button type="submit">Continue</button>
+                    </div>
+                    
+                    
+
+               
+
+
+                
+
+
+
+
+
+
+
+                 
+                      
+
+</form>
+</fieldset>
+    
+
+    
+</body>
+</html>
